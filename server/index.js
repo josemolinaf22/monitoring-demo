@@ -25,6 +25,8 @@ app.get('/styles', (req, res)=>{
     rollbar.info('css file served')
 })
 
+let students = []
+
 app.post('/api/student', (req, res)=>{
     let {name} = req.body
     name = name.trim()
